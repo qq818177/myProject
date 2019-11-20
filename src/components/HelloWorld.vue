@@ -35,7 +35,13 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
+  },
+  beforeDestroy() {
+    window.console.log("beforeDestroy");
+  },
+  destroyed() {
+    window.console.log("destroyed")
+  },
 }
 </script>
 
