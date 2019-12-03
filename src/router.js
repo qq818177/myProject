@@ -7,6 +7,7 @@ export default new Router({
     routes : [
         {
             path : '/',
+            alias : '/cart',
             name : 'cart',
             meta : {
                 auth : true
